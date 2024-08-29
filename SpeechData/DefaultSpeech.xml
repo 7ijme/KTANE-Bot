@@ -2,6 +2,8 @@
 <grammar version="1.0" xml:lang="en-US" tag-format="semantics/1.0" root="Main" xmlns="http://www.w3.org/TR/2004/REC-speech-grammar-20040316">
     <rule id="Main">
         <item> Bomb check </item>
+        <item> Random bomb </item>
+        <item> Reset bomb </item>
         <item> Defuse wires </item>
         <item> Defuse button </item>
         <item> Defuse symbols </item>

@@ -99,6 +99,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Content Include="bin\Debug\DefaultSpeech.xml" />
+    <Content Include="bin\Debug\Defuse.txt" />
+    <Content Include="bin\Debug\Knob.txt" />
+    <Content Include="bin\Debug\Password.txt" />
+    <Content Include="bin\Debug\Symbols.txt" />
+    <Content Include="bin\Debug\WhoIsOnFirst.txt" />
+    <Content Include="bin\Release\DefaultSpeech.xml" />
+    <Content Include="bin\Release\Defuse.txt" />
+    <Content Include="bin\Release\Knob.txt" />
+    <Content Include="bin\Release\Password.txt" />
+    <Content Include="bin\Release\Symbols.txt" />
+    <Content Include="bin\Release\WhoIsOnFirst.txt" />
     <Content Include="DefaultSpeech.grxml" />
     <Content Include="SpeechData\DefaultSpeech.xml" />
     <Content Include="SpeechData\Defuse.txt" />

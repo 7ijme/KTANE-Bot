@@ -159,6 +159,10 @@ namespace KTANE_Bot
                     //if the user hasn't yet initialized the bomb
                     if (_bomb == null)
                     {
+                        if (command == "Random bomb") {
+                            InitializeRandomBomb();
+                            return "Random bomb initialized.";
+                        }
                         if (command != "Bomb check")
                             return "You must first initialize the bomb. (Say \"Bomb check\" to do so)";
 
@@ -204,6 +208,9 @@ namespace KTANE_Bot
                         
                         switch (command)
                         {
+                            case "Reset bomb":
+                                ResetBomb();
+                                return "Bomb reset.";
                             case "The bomb exploded":
                                 var dismissingMessages = new[] { "Aww :(", "It's your fault.", "Think faster.", "You're useless.", "We tried our best." };
                                 

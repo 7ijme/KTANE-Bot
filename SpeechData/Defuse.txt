@@ -1,4 +1,6 @@
 Bomb check
+Random bomb
+Reset bomb
 Defuse wires
 Defuse button
 Defuse symbols
