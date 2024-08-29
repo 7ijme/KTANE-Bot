@@ -1,5 +1,6 @@
 using System.IO;
 using System.Speech.Recognition;
+using System.Xml;
 
 namespace KTANE_Bot
 {
@@ -84,9 +85,13 @@ namespace KTANE_Bot
         {
             var grammarBuilder = new GrammarBuilder();
             grammarBuilder.Append("Numbers", 1, 7);
+
+            
             grammarBuilder.AppendDictation(category: "numbers");
 
-            return new Grammar(grammarBuilder) {Name = "Memory Grammar"};
+            var escape = new GrammarBuilder();
+            escape.Append("ESCAPE MODULE");
+            return new Grammar(new Choices(grammarBuilder, escape)) {Name = "Memory Grammar"};
         }
 
         private static Grammar _WiresGrammar()
@@ -127,8 +132,40 @@ namespace KTANE_Bot
         private static Grammar _MorseGrammar()
         {
             var builder = new GrammarBuilder();
-            
-            builder.AppendDictation();
+
+            var list = new Choices(new GrammarBuilder[]
+            {
+                "0 1",  //A
+                "1 0 0 0",//B
+                "1 0 1 0",//C
+                "1 0 0", //D
+                "0", //E
+                "0 0 1 0", //F
+                "1 1 0", //G
+                "0 0 0 0", //H
+                "0 0",//I
+                "0 1 1 1",//J
+                "1 0 1",//K
+                "0 1 0 0",//L
+                "1 1",//M
+                "1 0",//N
+                "1 1 1",//O
+                "0 1 1 0",//P
+                "1 1 0 1",//Q
+                "0 1 0",//R
+                "0 0 0",//S
+                "1",//T
+                "0 0 1",//U
+                "0 0 0 1",//V
+                "0 1 1",//w
+                "1 0 0 1",//X
+                "1 0 1 1",//Y
+                "1 1 0 0",//Z
+                "ESCAPE MODULE"
+            });
+
+            //builder.AppendDictation();
+            builder.Append(list);
             return new Grammar(builder) {Name = "Morse Grammar"};
         }
 

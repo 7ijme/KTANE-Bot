@@ -5,6 +5,7 @@ All modules can be solved using the bot, using the right key-words.
 
 ### Before you give it a go, make sure that...
 
++ **Move the files in SpeechData intro the folder where the .exe file is.**
 + **You are using your default microphone.** The program automatically sets the input to your default audio input device.
 + **You have installed voices for English.** Microsoft David and Microsoft Zira should appear by default. If they don't, then you might not have installed voice for English.
 + **You are using headphones.** You can use speakers too, but you might want to lower the volume, as it might interfere with the audio inputs (the bot can hear itself).
@@ -176,7 +177,7 @@ I've named the symbols after what I thought was more obvious. You can take a loo
 I've tried to make the *Who's on First* module as simple as I possibly could. You shall say all words as they're written except:
 
 + [when the display is blank] → **"it is blank"**
-+ READ → **"read noun"**
++ READ → **"read verb"**
 + RED → "**red color"**
 + REED → **"ar ee ee dee"**
 + LEED → **"el ee ee dee"**

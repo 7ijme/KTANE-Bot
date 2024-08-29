@@ -21,7 +21,7 @@ namespace KTANE_Bot
             { "no", "lower right" },
             { "led", "middle left" },
             { "lead", "lower right" },
-            { "read noun", "middle right" },
+            { "read verb", "middle right" },
             { "red colour", "middle right" },
             { "ar ee ee dee", "lower left" },
             { "el ee ee dee", "lower left" },

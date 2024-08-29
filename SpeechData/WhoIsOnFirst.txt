@@ -9,7 +9,7 @@ blank
 no
 led
 lead
-read noun
+read verb
 red colour
 ar ee ee dee
 el ee ee dee

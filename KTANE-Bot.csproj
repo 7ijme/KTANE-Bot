@@ -98,7 +98,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitignore" />
     <Content Include="DefaultSpeech.grxml" />
+    <Content Include="SpeechData\DefaultSpeech.xml" />
+    <Content Include="SpeechData\Defuse.txt" />
+    <Content Include="SpeechData\Knob.txt" />
+    <Content Include="SpeechData\Password.txt" />
+    <Content Include="SpeechData\Symbols.txt" />
+    <Content Include="SpeechData\WhoIsOnFirst.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

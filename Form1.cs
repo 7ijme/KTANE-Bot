@@ -80,7 +80,7 @@ namespace KTANE_Bot
                     "<symbol> (await for next symbol). I have no idea how to explain this. Check SymbolsGrammar.txt to see all available symbols."
                 },
                 { "Maze Grammar", "<0-6>, <0-6>. To escape say \"escape module\"." },
-                { "Memory Grammar", "Numbers <all four numbers that you see>." },
+                { "Memory Grammar", "Numbers <all four numbers that you see>. To escape say \"escape module\"." },
                 {
                     "Bomb Check Grammar",
                     "Batteries <0-6> or none or more than two|Freak <yes/true/false/no>|Car <yes/true/false/no>|Vowel <yes/true/false/no>|Port <yes/true/false/no>|Digit <odd/even>"

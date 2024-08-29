@@ -297,6 +297,12 @@ namespace KTANE_Bot
                             if (_defusingModule == null)
                                 _defusingModule = new Memory(_bomb);
 
+                            if (command.EndsWith("ESCAPE MODULE"))
+                            {
+                                SwitchToDefaultProperties();
+                                return "Cancelled Memory.";
+                            }
+
                             var memory = (Memory)_defusingModule;
 
                             if (!memory.SetNumbers(command.Split(' ')))
@@ -381,7 +387,7 @@ namespace KTANE_Bot
                             if (_defusingModule == null)
                                 _defusingModule = new Morse(_bomb);
 
-                            if (command == "escape module")
+                            if (command.EndsWith("ESCAPE MODULE"))
                             {
                                 SwitchToDefaultProperties();
                                 return "Cancelled Morse.";
@@ -483,8 +489,6 @@ namespace KTANE_Bot
                         default:
                             throw new ArgumentOutOfRangeException();
                     }
-                    
-                    break;
             }
 
             return "No";
